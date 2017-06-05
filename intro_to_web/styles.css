@@ -1,0 +1,117 @@
+body, html, header, h1,h2,h3,h4,h5,h6,ul,li{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 90%;
+	color: #333;
+}
+
+/* ---------------------------- HEADER */
+header{
+	text-align: center;
+	padding: 0px 0px 30px 0px;
+	margin-bottom: 30px;
+	color: #000;/*rgba(0,0,0,.55);*/
+	/*box-shadow: 0px 0px 25px #ececec;*/
+}
+
+header h1{
+	font-size: 120%;
+	line-height: .75em;
+	padding: 10px 0px 0px 0px;
+	text-transform: uppercase;
+}
+
+#icon{
+	/*max-width: 90px;
+	overflow: hidden;*/
+}
+#icon img{
+	max-width: 90px;
+}
+/* ---------------------------- MAIN CONTENT */
+
+main{
+	width: 55vw;
+	float: left;
+	padding: 0 0 0 8vw;
+	margin: 0 auto;
+}
+
+article{
+	padding: 5px 0px 30px 0px;
+}
+
+article p{
+	line-height: 1.75em;
+}
+article section{
+	padding-top: 10px;
+}
+section{
+	margin: 5px 0 0 0;
+	border-top: 3px solid #ececec;
+}
+
+section p{
+	margin-top: 10px;
+	line-height: 1.5em;
+}
+
+section ul{
+	margin: 10px 0px 30px 0px;
+}
+
+/* ---------------------------- Side Bar Nav Styles, List styles*/
+.sidebar{
+	float: right;
+	padding: 0 8vw 0 0;
+	margin: 0;
+}
+
+.sidebar p{
+	font-size: 90%;
+	color: gray;
+}
+
+.sidebar h4{
+	color: black;
+}
+
+.sidebar nav{
+	margin-top: 20px;
+}
+
+ul{
+	list-style-type: none;
+}
+
+li{
+	margin-bottom: 8px;
+}
+
+ul a{
+	color: #000;
+	text-decoration: none;
+	border-bottom: 2px solid #ececec;
+}
+
+header nav li{
+	display: inline-block;
+	padding: 40px 20px 0px 20px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+    main { width: 90vw; padding: 0 5vw 0 5vw;}
+    .sidebar{ padding: 0px 5vw; float:left;}
+    header nav li{ padding: 20px 5px 0px 5px; }
+    header { padding: 0px; }
+}
+
+
+
+
