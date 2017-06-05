@@ -9,40 +9,61 @@ body{
 	color: #333;
 }
 
-/* ---------------------------- HEADER */
+/* ---------------------------- Primary Layout */
 header{
-	text-align: center;
 	padding: 0px 0px 30px 0px;
 	margin-bottom: 30px;
-	color: #000;/*rgba(0,0,0,.55);*/
-	/*box-shadow: 0px 0px 25px #ececec;*/
 }
-
-header h1{
-	font-size: 120%;
-	line-height: .75em;
-	padding: 10px 0px 0px 0px;
-	text-transform: uppercase;
-}
-
-#icon{
-	/*max-width: 90px;
-	overflow: hidden;*/
-}
-#icon img{
-	max-width: 90px;
-}
-/* ---------------------------- MAIN CONTENT */
 
 main{
 	width: 55vw;
-	float: left;
-	padding: 0 0 0 8vw;
+	float: right;
+	padding: 0 8vw 0 0;
 	margin: 0 auto;
 }
 
+aside{
+	width: 23vw;
+	float: left;
+	padding: 0px 0px 30px 8vw;
+	margin: 0px 4vw 0px 0px;
+}
+
+#content{
+	margin: 0 auto;
+	max-width: 960px;
+}
+/* ---------------------------- Header */
+header{
+	text-align: left;
+	color: #000;
+	padding: 0px 0px 2vw 8vw;
+
+}
+
+header h1{
+	font-size: 160%;
+	/*line-height: .75em;*/
+	text-transform: uppercase;
+	display: inline-block;
+	margin-top: -3px;
+}
+
+#icon{
+	display: inline-block;
+	max-width: 40px;
+	overflow: hidden;
+	vertical-align: bottom;
+}
+#icon img{
+	max-width: 90px;
+	margin-left: -25px;
+}
+/* ---------------------------- Main Content */
+
 article{
 	padding: 5px 0px 30px 0px;
+	border-top: 1px solid tomato;
 }
 
 article p{
@@ -53,7 +74,7 @@ article section{
 }
 section{
 	margin: 5px 0 0 0;
-	border-top: 3px solid #ececec;
+	
 }
 
 section p{
@@ -65,15 +86,15 @@ section ul{
 	margin: 10px 0px 30px 0px;
 }
 
-/* ---------------------------- Side Bar Nav Styles, List styles*/
-.sidebar{
-	float: right;
-	padding: 0 8vw 0 0;
-	margin: 0;
+/* ---------------------------- Side Bar Nav Styles, List styles */
+
+#site-navigation{
+	border-top: 1px solid tomato;
 }
 
 .sidebar p{
 	font-size: 90%;
+	line-height: 1.45em;
 	color: gray;
 }
 
@@ -82,6 +103,7 @@ section ul{
 }
 
 .sidebar nav{
+	font-size: 120%;
 	margin-top: 20px;
 }
 
@@ -94,7 +116,7 @@ li{
 }
 
 ul a{
-	color: #000;
+	color: tomato;
 	text-decoration: none;
 	border-bottom: 2px solid #ececec;
 }
@@ -104,12 +126,13 @@ header nav li{
 	padding: 40px 20px 0px 20px;
 }
 
-/* MEDIA QUERIES */
+/* ---------------------------- MEDIA QUERIES */
 @media screen and (max-width: 768px) {
-    main { width: 90vw; padding: 0 5vw 0 5vw;}
-    .sidebar{ padding: 0px 5vw; float:left;}
-    header nav li{ padding: 20px 5px 0px 5px; }
-    header { padding: 0px; }
+    header h1{ padding-top: 4px;}
+    header { padding: 0px 0px 0px 5vw; margin-bottom: 0px;}
+    main { width: 90vw; padding: 0 5vw 0 5vw; float: left;}
+    .sidebar{ width: 90vw; padding: 0px 5vw 0px 5vw; float:left; }
+    #site-navigation{ border-top: none; margin-bottom: 30px;}
 }
 
 
