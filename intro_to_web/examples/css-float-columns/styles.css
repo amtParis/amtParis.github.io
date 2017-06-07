@@ -1,0 +1,27 @@
+*{
+box-sizing: border-box;
+}
+
+.col-3{
+	float: left;
+	width: 33.3%;
+	min-height: 120px;
+	background-color: lightblue;
+	border: 1px solid white;
+}
+
+.col-2{
+	float: left;
+	width: 50%;
+	min-height: 120px;
+	background-color: tomato;
+	border: 1px solid white;
+}
+
+.col-group{
+	overflow: hidden;
+}
+
+header{
+	text-align: center;
+}

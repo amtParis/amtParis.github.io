@@ -1,0 +1,28 @@
+*{
+box-sizing: border-box;
+}
+
+.col-group{
+	display: flex;
+}
+
+.col-3{
+	
+	width: 33.3%;
+	min-height: 120px;
+	background-color: lightblue;
+	border: 1px solid white;
+}
+
+.col-2{
+	
+	width: 50%;
+	min-height: 120px;
+	background-color: tomato;
+	border: 1px solid white;
+}
+
+
+header{
+	text-align: center;
+}
