@@ -1,0 +1,128 @@
+/* Defaults */
+html,body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto','Helvetica', sans-serif;
+	font-size: 16px;
+	color: #888;
+
+}
+
+a{ text-decoration: none; }
+
+p{ line-height: 1.5; }
+
+h1,h2,h3{
+	font-weight: normal;
+}
+
+
+/* Main Layouts */
+#banner{
+	height: 400px;
+}
+
+.three-col-group{
+	margin: 80px auto 80px auto;
+	width: 70%;
+	display: flex;
+}
+
+.col-3{
+	width: 33.3%;
+}
+
+.single-col{
+	width: 90%;
+	margin: 0 auto 80px auto;
+}
+
+#top-nav{
+	position: fixed;
+	width: 100%;
+}
+
+
+/* Top Navigation Header */
+#top-nav{
+	background-color: rgba(0,0,0,.5);
+	color: white;
+	text-align: right;
+}
+
+#top-nav li{
+	display: inline;
+	padding: 10px;
+	letter-spacing: .1em;
+	font-size: .8em;
+}
+
+#top-nav a{
+	color: white;
+}
+
+
+
+/* Banner Header */
+#banner{
+	background-image: url("images/1.jpg");
+	background-position: left center; 
+	text-align: center;
+	color: white;
+}
+
+
+
+.logo{
+	padding-top: 80px;
+}
+
+.page-title{
+	margin: 0px;
+	padding-top: 20px;
+	text-transform: uppercase;
+	font-weight: lighter;
+	font-size: 1.65em;
+}
+
+.page-subtitle{
+	width: 60%;
+	margin: 20px auto;
+	font-size: .99em;
+	font-weight: lighter;
+	line-height: 1.5;
+}
+
+/* Columns */
+.col-3{
+	padding: 0px 20px;
+}
+
+.col-3 p{
+	font-size: .9em;
+}
+
+.icon{
+	width: 120px;
+	height: 120px;
+	border-radius: 60px;
+	background-color: #7cbfdc;
+	margin: 0 auto;
+	
+}
+#icon-1{
+	background-image:url("images/tree.png");
+}
+#icon-2{
+	background-image:url("images/tree2.png");
+}
+#icon-3{
+	background-image:url("images/tree3.png");
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.single-col h2{
+	text-align: center;
+}
