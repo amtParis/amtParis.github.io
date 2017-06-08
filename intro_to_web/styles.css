@@ -1,4 +1,4 @@
-body, html, header, h1,h2,h3,h4,h5,h6,ul,li{
+body, html, header, h1,h2,h3,ul,li{
 	padding: 0;
 	margin: 0;
 	font-weight: normal;
@@ -47,6 +47,10 @@ header{
 
 }
 
+header a{
+	text-decoration: none;
+	color: #000;
+}
 header h1{
 	font-size: 160%;
 	/*line-height: .75em;*/
@@ -131,6 +135,11 @@ ul a{
 header nav li{
 	display: inline-block;
 	padding: 40px 20px 0px 20px;
+}
+
+ul.ul-box-dec{
+	list-style-type: square;
+	padding-left: 15px;
 }
 
 /* ---------------------------- MEDIA QUERIES */

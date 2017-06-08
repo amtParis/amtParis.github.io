@@ -1,0 +1,118 @@
+*{
+  box-sizing: border-box;
+}
+
+/*-------------------------------- Font Styles */
+@font-face{
+	font-family: Raleway;
+	src: url('fonts/Raleway-Regular.ttf');
+}
+
+@font-face{
+	font-family: Raleway;
+	src: url('fonts/Raleway-Light.ttf');
+	font-weight: lighter;
+}
+
+a{
+	text-decoration: none;
+	color: salmon;
+}
+
+body{
+	font-size: 100%;
+	font-family: Raleway,Arial, sans-serif;
+	color: gray;
+}
+
+#page{
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+ul.thumbnail-grid{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul.thumbnail-grid li{
+	/*display: inline-block;*/ /* Allows list items to be in grid */
+	width: 100%;
+	max-width: 300px;
+	position: relative; /* Needed to allow overlays. */
+	margin: 3px auto 20px auto;
+}
+
+.thumbnail-grid  img{
+	display: block; /* Keeps image and container same height. */
+	width: 100%; /* Image sizes to containing width size. */
+}
+
+.thumbnail-grid  a{
+	display: block; 		/* a tag is normally inline but we want it to be a block like the image. */
+	position: absolute;		/* Allows the position to overlay on top of image. */
+	top: 0;
+  	width: 100%;
+  	height: 100%;
+  	margin: 0;
+  	padding: 0;
+  	
+  	opacity: 0;
+  	filter: alpha(opacity=0);	/* For older IE browser */
+	-transition: opacity .5s;
+	-webkit-transition: opacity .5s;
+	-moz-transition: opacity .5s;
+}
+
+.thumbnail-grid p {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		
+		margin: 0;
+		padding: 8px 0;
+		
+		color: white;
+		text-align: center;
+		font-family: Helvetica;
+		font-weight: lighter;
+		font-size: 1em;
+		background-color: rgba(1, 1, 1, .5);
+}
+
+.thumbnail-grid  a:hover{
+	opacity: 1;
+}
+
+
+h1{
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: .15em;
+	text-align: center;
+	color: #000;
+}
+
+h2,h3{
+	font-weight: lighter;
+}
+
+footer{
+	margin: 20px 0 20px;
+}
+
+
+/* ---- Media Queries ---- */
+
+@media screen and (min-width:600px){
+
+	ul.thumbnail-grid li{
+		display: inline-block;
+		width: 45%;
+		margin:5px;
+	}
+}
