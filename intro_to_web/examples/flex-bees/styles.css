@@ -1,0 +1,153 @@
+*{box-sizing: border-box;}
+
+body,html,div,ul,h1{
+	margin: 0;
+	padding: 0;
+}
+
+
+body{
+	background-color: #ffcc07;
+	font-family: sans-serif;
+	color: rgba(0,0,0,.85);
+}
+
+
+
+/* ---------------Top Navigation */
+header{
+	margin-bottom: 20px;
+}
+
+header ul{
+	display: flex;
+	justify-content: flex-end;
+}
+
+header li{
+	list-style-type: none;
+	background-color: rgba(0,0,0,.75);
+	color: white;
+	padding: 5px 10px;
+	margin-left: 2px;
+	transition: flex-grow 1s;
+}
+
+header li:last-child{
+	background-color: rgba(1,1,1,.5);
+}
+
+header li:hover{
+	flex-grow:1;
+}
+/* ---------------Top heading */
+
+h1{
+	font-size: 8vw;
+	text-transform: uppercase;
+}
+
+/* ---------------Main content */
+main{
+	padding: 0 5% 0 5%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+section{
+	margin: 50px 0;
+
+}
+
+.flex-2-col{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.flex-2-col div{
+	flex-basis: 0;
+	flex-grow: 1;
+}
+
+.flex-2-col img{
+	max-width: 100%;
+	border: 6px solid black;
+	margin: 0 auto;
+	display: block;
+}
+
+p{
+	line-height: 1.5;
+}
+
+h2{
+	color: rgba(0,0,0,.25);
+	/*font-weight: normal;*/
+}
+
+
+/* ---------------Row icons */
+.flex-row-icons{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.flex-row-icons li{
+	width: 80px;
+	height: 80px;
+	list-style-type: none;
+}
+
+
+.flex-row-icons img{
+	max-width: 100%;
+	transition: opacity 4s, transform 10s;
+}
+
+.flex-row-icons img:hover{
+	opacity:0;
+	transform: scale(1.15);
+}
+
+/*-----------Footer */
+footer{
+	padding: 20px;
+	background-color: rgba(0,0,0,.75);
+}
+
+footer a{
+	color: white;
+	text-decoration: none;
+	border: 1px dotted white;
+	padding: 2px;
+}
+
+/*-----------Media Queries */
+
+@media screen and (min-width:600px){
+	
+	.flex-2-col{
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.flex-2-col div{ 
+		padding: 20px; 
+	}
+
+	.right-format{
+		flex-direction: row-reverse;
+	}
+
+	.flex-row-icons{
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.flex-row-icons li{
+		width: 100px;
+		height: 100px;
+	}
+}

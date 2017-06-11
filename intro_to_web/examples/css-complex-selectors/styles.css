@@ -1,0 +1,37 @@
+body{
+	font-family: sans-serif;
+	width: 50%;
+	margin: 0 auto;
+}
+
+/* in an ordere-list (ol) even list items are highlighted */
+ol li:nth-child(even){
+	background-color: lightgray;
+}
+
+/* the p just after the h2 inside an article changes color, size and style */
+article h2 + p{
+	color: darkolivegreen;
+	font-style: italic;
+	font-size: 1.25em;
+}
+
+/* all paragraphs in article have line-height increased */
+article p{
+	line-height: 1.5;
+}
+
+header{
+	text-align: center;
+}
+
+header nav li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 5px;
+}
+
+/* the last item in the header nav is outlined */
+header nav li:last-child{
+	border: 1px solid black;
+}
