@@ -97,6 +97,10 @@ section ul{
 	margin: 10px 0px 30px 0px;
 }
 
+section > h3:first-of-type{
+	background-color: #ececec;
+	padding: 2px;
+}
 /* ---------------------------- Side Bar Nav Styles, List styles */
 
 #site-navigation{
