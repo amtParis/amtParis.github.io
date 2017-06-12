@@ -1,0 +1,32 @@
+#top-banner{
+	display: flex;
+	flex-direction: column;
+	min-height: 300px;
+	text-align: center;
+	background-color: tomato;
+}
+
+.flex-triple-col{
+	display: flex;
+	background-color: palegreen;
+	margin: 0px 10vw;
+}
+
+.flex-full-col{
+	display: flex;
+	flex-direction: column;
+	background-color: pink;
+	text-align: center;
+}
+
+.col{
+	min-height: 200px;
+	background-color: gold;
+	flex-grow: 1;
+	margin: 0px 2vw;
+}
+
+.col:nth-child(2n){
+	background-color: lightblue;
+}
+
