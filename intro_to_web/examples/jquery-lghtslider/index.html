@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>jQuery Simple Slideshow</title>
+		<meta charset="utf-8">
+	    <meta name="description" content="some project">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="light-slider/js/lightslider.js"></script>
+		
+		<link type="text/css" rel="stylesheet" href="light-slider/css/lightslider.css" />
+		<link rel="stylesheet" type="text/css" href="styles.css">
+
+	</head>
+	<body>
+
+		<main>
+			<div class="slideshow">
+				<ul id="light-slider"> 
+					<li><img src="images/slide4.jpg" alt="Wire mesh."></li>
+					<li><img src="images/slide1.jpg" alt="Hands filled with the universe."></li>
+					<li><img src="images/slide2.jpg" alt="Distorted man illustration."></li>
+					<li><img src="images/slide3.jpg" alt="Point cloud mesh person."></li>
+				</ul>
+			</div>
+			
+			
+		</main>
+
+		<script>
+			$("#light-slider").lightSlider(
+				{
+					autoWidth: true
+				});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,58 @@
+body,html,header,main{
+	margin: 0;
+	padding: 0;
+}
+/*--------------------- */
+
+.colors li:nth-child(1){
+	background-color: #ececec;
+}
+
+
+
+
+/*--------------------- Template Styles */
+header,main{
+	width: 80%;
+	margin: 0 auto;
+}
+
+main{
+	margin-bottom: 100px;
+}
+
+h1.style-guide,h2.style-guide{
+	font-family: sans-serif;
+	font-size: 1.25em;
+	color: lightgray;
+	letter-spacing: .25em;
+	text-transform: uppercase;
+	border-bottom: 2px dotted #ececec;
+}
+
+h2.style-guide{
+	font-size: .9em;
+	text-transform: uppercase;
+
+}
+
+section.style-guide{
+	margin: 3vw 0;
+}
+
+ul.style-guide{
+	display: flex;
+	justify-content: center;
+}
+
+ul.style-guide li{
+	border: 1px solid #ececec;
+	border-radius: 50%;
+	width: 10vw;
+	height: 10vw;
+	max-width: 100px;
+	max-height: 100px;
+	list-style-type: none;
+	margin: 5px;
+	
+}

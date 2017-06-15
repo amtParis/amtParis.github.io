@@ -1,0 +1,30 @@
+li,ul{
+	margin: 0;
+	padding: 0;
+}
+
+main{
+	text-align: center;
+}
+
+.slideshow{
+	margin: 0 auto;
+	overflow: hidden;
+	max-width: 500px;
+	max-height: 300px;
+}
+
+.slideshow img{
+	width: 500px;
+	height: 300px;
+}
+
+.slideshow li{
+	list-style-type: none;
+}
+
+.slideshow ul{
+	display: flex;
+	margin-left: 0px; 
+}
+
