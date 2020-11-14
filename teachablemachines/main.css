@@ -12,6 +12,10 @@ html,body{
   height: 100vh;
 }
 
+#webcam-container canvas{
+  width: 100%;
+}
+
 .content{
   position: relative;
 }
@@ -35,13 +39,15 @@ html,body{
 }
 
 #no-container{
-  background-color: rgba(0,0,0,.25);
+  /* background-color: rgba(255,0,0,.25); */
   color: white;
 }
 
 #yes-container{
   /* background-color: rgba(0,0,0,.65); */
   color: white;
+  background-color: rgba(255,0,0,.25);
+
 }
 
 .loading{

@@ -1,8 +1,8 @@
 
 // the link to your model locally or the link from Teachable Machines
 const URL = "./tm-my-image-model/";
-const flip = true;
-const limit = .5;
+const flip = false;
+const limit = 0;
 const noEl = document.getElementById("no-container");
 const yesEl = document.getElementById("yes-container");
 const audioEl = document.getElementById("fanfare");
