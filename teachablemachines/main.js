@@ -62,6 +62,16 @@ async function init() {
                               flip); // width, height, flip
   await webcam.setup(
       {facingMode : "environment"}); // request access to the webcam
+
+  let wc = document.getElementsByTagName('video')[0];
+  wc.setAttribute(
+      "playsinline",
+      true); // written with "setAttribute" bc. iOS buggs otherwise :-)
+  wc.muted = "true"
+  wc.id = "webcamVideo";
+
+  // only now start the webcam --> **after video-object added to DOM and
+  // attributes are set**
   await webcam.play();
   window.requestAnimationFrame(loop);
 
