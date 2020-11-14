@@ -31,7 +31,7 @@ function swapDivs(label) {
     yesEl.classList.remove("hide");
     noEl.classList.add("hide");
 
-    audioEl.play();
+    // audioEl.play();
 
   } else {
     // hide both
