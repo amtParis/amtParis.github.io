@@ -1,7 +1,6 @@
 
 // the link to your model locally or the link from Teachable Machines
-const URL =
-    "https://drive.google.com/uc?export=view&id=1ly0VxzKQ1VJxoTNPoSDgaD6UI9PJSgVj/";
+const URL = "./tm-my-image-model/";
 const flip = true;
 const limit = .5;
 const noEl = document.getElementById("no-container");
