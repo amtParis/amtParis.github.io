@@ -63,6 +63,8 @@ async function init() {
   await webcam.setup(
       {facingMode : "environment"}); // request access to the webcam
 
+  document.getElementById("webcam-container").appendChild(webcam.webcam);
+
   let wc = document.getElementsByTagName('video')[0];
   wc.setAttribute(
       "playsinline",
@@ -76,7 +78,6 @@ async function init() {
   window.requestAnimationFrame(loop);
 
   // append elements to the DOM
-  document.getElementById("webcam-container").appendChild(webcam.canvas);
 }
 
 async function loop() {
