@@ -22,7 +22,11 @@ video{
 }
 
 .content{
-  position: relative;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
 }
 
 #no-container,#yes-container{
@@ -44,15 +48,14 @@ video{
 }
 
 #no-container{
-  /* background-color: rgba(255,0,0,.25); */
   color: white;
+  background-color: rgba(0,0,0,.5);
+
 }
 
 #yes-container{
-  /* background-color: rgba(0,0,0,.65); */
   color: white;
-  background-color: rgba(255,0,0,.25);
-
+  /* background-color: rgba(255,0,0,.25); */
 }
 
 .loading{
