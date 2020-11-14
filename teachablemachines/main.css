@@ -13,7 +13,7 @@ html,body{
 }
 
 #webcam-container canvas{
-  width: 100%;
+  width: 100vw;
 }
 
 .content{
