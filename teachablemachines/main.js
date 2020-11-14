@@ -11,7 +11,7 @@ let model, webcam, labelContainer, maxPredictions;
 let lastLabel = "none";
 
 function swapDivs(label) {
-  console.log(label);
+  // console.log(label);
   const yesLabel = "Present";
   const noLabel = "No Present";
   // if(label == noLabel && currentLabel == yesLabel){
@@ -55,6 +55,9 @@ async function init() {
   let webCamWidth = window.innerWidth;
   let webCamHeight = window.innerHeight;
 
+  console.log("width: " + webCamWidth);
+  console.log("height: " + webCamHeight);
+
   webcam = new tmImage.Webcam(webCamWidth, webCamHeight,
                               flip); // width, height, flip
   await webcam.setup(
@@ -82,7 +85,7 @@ async function predict() {
   for (let i = 0; i < maxPredictions; i++) {
     const classPrediction =
         prediction[i].className + ": " + prediction[i].probability.toFixed(2);
-    console.log(classPrediction);
+    // console.log(classPrediction);
     if (prediction[i].probability > highestProbability &&
         prediction[i].probability > limit) {
       bestLabel = prediction[i].className;
